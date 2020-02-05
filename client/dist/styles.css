@@ -1,402 +1,430 @@
 body {
-    font-family: Arial, Tahoma;
-    text-align: center;
-    background-color: #f2f2f2;
+  font-family: Arial, Tahoma;
+  /* text-align: center; */
+  background-color: #f2f2f2;
 }
 
 #topbanner {
-    position: absolute;
-    left: 100px;
+  position: absolute;
+  left: 100px;
 }
 
-h3, #calendar, #guestsmod, #monthname  {
-    font-size: 15px;
+h3,
+#calendar,
+#guestsmod,
+#monthname {
+  font-size: 15px;
 }
 
-#price, #checkin, #checkout, #guests, #viewdeal, #roomstitle, #roomsbuttoncontainer, #adultstitle, #adultsbuttoncontainer, #childrentitle, #childrenbuttoncontainer, #updatebuttoncontainer, #roomsmodtext, .roomsmodvalue, #views {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#price,
+#checkin,
+#checkout,
+#guests,
+#viewdeal,
+#roomstitle,
+#roomsbuttoncontainer,
+#adultstitle,
+#adultsbuttoncontainer,
+#childrentitle,
+#childrenbuttoncontainer,
+#updatebuttoncontainer,
+#roomsmodtext,
+.roomsmodvalue,
+#views {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #widget {
-    display: flex;
+  display: flex;
 }
 
 #main {
-    order: 0;
-    text-align: center;
-    position: absolute;
-    left: 100px;
-    top: 265px;
-    display: grid;
-    width: 400px;
-    height: 350px;
-    grid-template: 20% 15% 15% 20% 5% 25% / 50% 50%;
+  order: 0;
+  text-align: center;
+  position: absolute;
+  left: 100px;
+  top: 265px;
+  display: grid;
+  width: 400px;
+  height: 350px;
+  grid-template: 20% 15% 15% 20% 5% 25% / 50% 50%;
 }
 
 #calendarview {
-    position: absolute;
-    top: 257px;
-    left: 500px;
-    bottom: auto;
-    right: auto;
-    z-index: 2;
-    order: 1;
-    width: 585px;
-    height: 420px;
-    display: flex;
-    justify-content: left;
-    margin-left: 15px;
+  position: absolute;
+  top: 257px;
+  left: 500px;
+  bottom: auto;
+  right: auto;
+  z-index: 2;
+  order: 1;
+  width: 585px;
+  height: 420px;
+  display: flex;
+  justify-content: left;
+  margin-left: 15px;
 }
 
 .example-enter {
-    opacity: 0;
-    transform: scale(0.9);
+  opacity: 0;
+  transform: scale(0.9);
 }
 
 .example-enter-active {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 300ms, transform 300ms;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
 }
 
 #views {
-    grid-area: 1/1/1/3;
-    text-align: center;
-    color: rgb(211, 13, 13);
+  grid-area: 1/1/1/3;
+  text-align: center;
+  color: rgb(211, 13, 13);
 }
 
 #checkin {
-    grid-area: 2/1/2/2;
+  grid-area: 2/1/2/2;
 }
 
 #checkout {
-    grid-area: 2/2/2/3;
+  grid-area: 2/2/2/3;
 }
 
 #guests {
-    grid-area: 3/1/3/3;
+  grid-area: 3/1/3/3;
 }
 
 #price {
-    grid-area: 4/1/4/3;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.847);
+  grid-area: 4/1/4/3;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.847);
 }
 
 #cancellation {
-    grid-area: 5/1/5/2;
-    font-size: 10px;
+  grid-area: 5/1/5/2;
+  font-size: 10px;
 }
 
 #viewdeal {
-    grid-area: 6/1/6/3;
+  grid-area: 6/1/6/3;
 }
 
 #calendar {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    font-weight: 700;
-    display: grid;
-    grid-template: 15% 75% 10% / 50% 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  display: grid;
+  grid-template: 15% 75% 10% / 50% 50%;
 }
 
 #selectdate {
-    grid-area: 1 / 1 / 1 / 3;
-    border-bottom: 1px solid #e5e5e5;
-    margin: 0px 15px; 
-    color: rgba(0, 0, 0, 0.847);
+  grid-area: 1 / 1 / 1 / 3;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0px 15px;
+  color: rgba(0, 0, 0, 0.847);
 }
 
 #firstmonth {
-    grid-area: 2 / 1 / 2 / 2;
-    margin: 12px 0px;
+  grid-area: 2 / 1 / 2 / 2;
+  margin: 12px 0px;
 }
 
 #secondmonth {
-    grid-area: 2 / 2 / 2 / 3;
-    border: solid #e5e5e5;
-    border-width: 0 0 0 1px;
-    margin: 12px 0px;
+  grid-area: 2 / 2 / 2 / 3;
+  border: solid #e5e5e5;
+  border-width: 0 0 0 1px;
+  margin: 12px 0px;
 }
 
 #averagerates {
-    grid-area: 3 / 1 / 3 / 3;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-left: 10px;
-    font-size: 12px;
-    color: #4a4a4a;
-    font-weight: 500;
-    border-top: 1px solid #e5e5e5;
-    margin: 0px 15px;
+  grid-area: 3 / 1 / 3 / 3;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 12px;
+  color: #4a4a4a;
+  font-weight: 500;
+  border-top: 1px solid #e5e5e5;
+  margin: 0px 15px;
 }
 
 #guestsmod {
-    height: 70%;
-    width: 60%;
-    margin-top: 20%;
-    text-align: center;
-    font-weight: 700;
-    display: grid;
-    grid-template: 25% 25% 25% 25% / 40% 60%;
+  height: 70%;
+  width: 60%;
+  margin-top: 20%;
+  text-align: center;
+  font-weight: 700;
+  display: grid;
+  grid-template: 25% 25% 25% 25% / 40% 60%;
 }
 
 #roomstitle {
-    grid-area: 1/1/1/2;
+  grid-area: 1/1/1/2;
 }
 
 #roomsbuttoncontainer {
-    grid-area: 1/2/1/3;
+  grid-area: 1/2/1/3;
 }
 
 #adultstitle {
-    grid-area: 2/1/2/2;
+  grid-area: 2/1/2/2;
 }
 
 #adultsbuttoncontainer {
-    grid-area: 2/2/2/3;
+  grid-area: 2/2/2/3;
 }
 
 #childrentitle {
-    grid-area: 3/1/3/2;
+  grid-area: 3/1/3/2;
 }
 
 #childrenbuttoncontainer {
-    grid-area: 3/2/3/3;
+  grid-area: 3/2/3/3;
 }
 
 #updatebuttoncontainer {
-    grid-area: 4/1/4/3;
+  grid-area: 4/1/4/3;
 }
 
-#guestsmod, #calendar, #main {
-    background-color: #fff;
-    border: 1px solid #e5e5e5;
-    border-radius: 2px;
-    box-shadow: 0px 4px 4px 0 rgba(0,0,0,.1);
+#guestsmod,
+#calendar,
+#main {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 button {
-    background-color: #fff;
-    font-size: 13px;
-    font-weight: 500;
-    font-family: Arial, Tahoma;
-    border-radius: 2px;
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Arial, Tahoma;
+  border-radius: 2px;
 }
 
 #updatebutton {
-    height: 40px;
-    width: 80%;
-    border-color: #078171;
-    border-radius: 3px;
-    background-color: #078171;
-    color: #fff;
+  height: 40px;
+  width: 80%;
+  border-color: #078171;
+  border-radius: 3px;
+  background-color: #078171;
+  color: #fff;
 }
 
 #guestsbutton {
-    width: 95%;
-    height: 44px;
-    text-align: left;
-    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  width: 95%;
+  height: 44px;
+  text-align: left;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 #checkoutbutton {
-    box-shadow: 0 1px 2px rgba(0,0,0,.1), -8px 0 0 #d91e18;
-    width: 87%;
-    height: 44px;
-    margin-left: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), -8px 0 0 #d91e18;
+  width: 87%;
+  height: 44px;
+  margin-left: 8px;
 }
 
 #checkinbutton {
-    box-shadow: 0 1px 2px rgba(0,0,0,.1), -8px 0 0 #00a680;
-    width: 87%;
-    height: 44px;
-    margin-left: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), -8px 0 0 #00a680;
+  width: 87%;
+  height: 44px;
+  margin-left: 8px;
 }
 
-#checkinbutton, #checkoutbutton, #guestsbutton {
-    border: 1px solid #d6d6d6;
-    border-radius: 3px;
+#checkinbutton,
+#checkoutbutton,
+#guestsbutton {
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
 }
 
 #viewdealbutton {
-    background-color: #fc0;
-    font-weight: 700;
-    font-size: 16px;
-    height: 35px;
-    width: 300px;
+  background-color: #fc0;
+  font-weight: 700;
+  font-size: 16px;
+  height: 35px;
+  width: 300px;
 }
 
-.increment, .decrement {
-    height: 36px;
-    width: 36px;
-    color: #00a680;
-    font-size: 30px;
-    font-weight: 500;
-    box-shadow: none;
+.increment,
+.decrement {
+  height: 36px;
+  width: 36px;
+  color: #00a680;
+  font-size: 30px;
+  font-weight: 500;
+  box-shadow: none;
 }
 
 .roomsmodvalue {
-    height: 36px;
-    width: 50px;
-    box-shadow: inset 0 4px 3px -3px rgba(0,0,0,.25), inset 0 -4px 3px -3px rgba(0,0,0,.25);
-    font-weight: 500;
+  height: 36px;
+  width: 50px;
+  box-shadow: inset 0 4px 3px -3px rgba(0, 0, 0, 0.25),
+    inset 0 -4px 3px -3px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #pricevalue:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 #viewdealbutton:hover {
-    background-color: #e4a000;
+  background-color: #e4a000;
 }
 
-.dayin#lowPrice:hover, .dayin:hover {
-    cursor: pointer;
-    background-color: #00a680;
-    color: white;
+.dayin#lowPrice:hover,
+.dayin:hover {
+  cursor: pointer;
+  background-color: #00a680;
+  color: white;
 }
 
-.dayout#lowPrice:hover, .dayout:hover {
-    cursor: pointer;
-    background-color: #d91e18;
-    color: white;
+.dayout#lowPrice:hover,
+.dayout:hover {
+  cursor: pointer;
+  background-color: #d91e18;
+  color: white;
 }
 
 #lowPrice {
-    border-radius: 2px;
-    background-color: #fc0;
+  border-radius: 2px;
+  background-color: #fc0;
 }
 
 #lowestpriced {
-    font-size: 12px;
-    color: #4a4a4a;
-    margin-top: 4px;
+  font-size: 12px;
+  color: #4a4a4a;
+  margin-top: 4px;
 }
 
 #selectdate {
-    text-align: center;
-    padding: 10px 0 10px;
+  text-align: center;
+  padding: 10px 0 10px;
 }
 
 #legendDot {
-    background: #fc0;
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    border-radius: 2px;
-    margin-right: 5px;
+  background: #fc0;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  margin-right: 5px;
 }
 
 #pricevalue {
-    font-size: 22px;
-    font-weight: 700;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 #check {
-    height: 9px;
-    width: 13px;
+  height: 9px;
+  width: 13px;
 }
 
 #weekdaynames {
-    font-weight: 500;
-    font-size: 11px;
-    color: #2c2c2c;
+  font-weight: 500;
+  font-size: 11px;
+  color: #2c2c2c;
 }
 
 #monthname {
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.847);
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.847);
 }
 
-.next, .previous {
-    height: 30px;
-    width: 30px;
-    font-weight: 500;
-    font-size: 20px;
-    padding-left: 10px;
-    box-shadow: none;
-    border: none;
-    color: rgb(168, 168, 168);
+.next,
+.previous {
+  height: 30px;
+  width: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  padding-left: 10px;
+  box-shadow: none;
+  border: none;
+  color: rgb(168, 168, 168);
 }
 
 .previous {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .next {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 #monthdetails {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: -10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
 }
 
 .monthtable {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .monthdetailpad {
-    width: 20px;
+  width: 20px;
 }
 
 .day {
-    padding: 5px 5px;
-    color: #4b4b4b;
-    font-size: 14px;
+  padding: 5px 5px;
+  color: #4b4b4b;
+  font-size: 14px;
 }
 
 .date {
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.847)
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.847);
 }
 
-.calendarImage{
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
-    margin-left: -15px;
-    display: inline-block;
+.calendarImage {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  margin-left: -15px;
+  display: inline-block;
 }
 
 #guestsimage {
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
-    display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  display: inline-block;
 }
 
 #viewsimage {
-    height: 25px;
-    width: 25px;
-    margin-right: 5px;
-    margin-bottom: 2px;
-    display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  display: inline-block;
 }
 
 .guestsmodimage {
-    height: 20px;
-    width: 20px;
-    margin-right: 5px;
-    margin-bottom: 4px;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+  margin-bottom: 4px;
 }
 
 #adultsmodimage {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
-.calendarWords, #guestswords, #viewsheader {
-    display: inline-block;
+.calendarWords,
+#guestswords,
+#viewsheader {
+  display: inline-block;
 }
